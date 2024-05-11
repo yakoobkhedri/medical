@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="assets/css/swiper.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+    <title>خانه</title>
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="h-105">
+
+        <nav class="container d-flex justify-content-between align-items-center fw-bold h-100">
+
+            <!-- menu overlay -->
+            <div id="menuOverlay"></div>
+
+            <!-- ham icon -->
+            <svg id="hamicon" xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor"
+                class="bi bi-list-nested flex-shrink-0 main-text d-xl-none cursor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
+            </svg>
+
+            <!-- logo -->
+            <div class="d-flex align-items-center gap-4">
+                <a class="d-flex align-items-center gap-2">
+                    <img alt="logo" src="assets/img/logo.png" class="img-fluid">
+                </a>
+            </div>
+
+            <!-- menu -->
+            <div class="d-flex gap-5 align-items-center h-100 h-lg-auto">
+                <ul class="m-0 list-unstyled menu p-0 d-xl-flex align-items-center gap-5 h-100 h-lg-auto">
+                    <div class="d-flex d-xl-none align-items-center justify-content-between px-2 my-3">
+                        <a class="d-flex align-items-center add-list main-bg transition gap-2 px-4 btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-plus-circle-fill text-white transition" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z">
+                                </path>
+                            </svg>
+                            <span class="text-white transition">افزودن لیست</span>
+                        </a>
+                        <svg id="closeMenu" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                            fill="currentColor" class="bi bi-x-lg main-text cursor" viewBox="0 0 16 16">
+                            <path
+                                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                        </svg>
+                    </div>
+                    <li class="h-100 h-lg-auto d-xl-flex align-items-center"><a class="active">خانه</a></li>
+                    <li class="h-100 h-lg-auto d-xl-flex align-items-center">
+                        <a class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                              </svg>
+                            <span>صفحات</span>
+                        </a>
+                        <ul class="m-0 p-0 list-unstyled">
+                            <div class="shadow p-3">
+                                <li class=""><a class="d-block py-0 py-xl-2">لیست املاک</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-2">مشاوران</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-2">نمایندگان</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="h-100 h-lg-auto d-xl-flex align-items-center">
+                        <a class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                              </svg>
+                            <span>خدمات</span>
+                        </a>
+                        <ul class="m-0 p-0 list-unstyled">
+                            <div class="shadow p-3">
+                                <li class=""><a class="d-block py-0 py-xl-2">لیست املاک</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-2">مشاوران</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-2">نمایندگان</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="h-100 h-lg-auto d-xl-flex align-items-center">
+                        <a class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                              </svg>
+                            <span>بلاگ</span>
+                        </a>
+                        <ul class="m-0 p-0 list-unstyled">
+                            <div class="shadow p-3">
+                                <li class=""><a class="d-block py-0 py-xl-2">لیست املاک</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-2">مشاوران</a></li>
+                                <li class=""><a class="d-block py-0 py-xl-2">نمایندگان</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="h-100 h-lg-auto d-xl-flex align-items-center"><a>تماس با ما</a></li>
+                    <a class="d-flex d-xl-none align-items-center gap-3 text-white-50 px-3 py-2 mt-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-telephone-fill main-text" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <p class="mb-0 h5 font-bold"> (123) 456-78901</p>
+                    </a>
+                    <a class="d-flex d-xl-none align-items-center gap-3 text-white-50 px-3 py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            class="bi bi-envelope main-text" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                        <p class="mb-0 h5 font-bold"> support@vehica.com</p>
+                    </a>
+                </ul>
+                <a class="d-flex align-items-center main-text transition gap-3 p-1 pe-5 rounded-3 bg-main shadow-main">
+                    <span class="text-white transition font-bold">تماس با ما</span>
+                    <div class="d-flex align-items-center justify-content-center rounded-3 bg-white w-40 h-40">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left text-main" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- main -->
+
+    <main>
+
+      
+
+    </main>
+
+    <!-- footer -->
+
+    <footer>
+
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

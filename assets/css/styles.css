@@ -1,0 +1,267 @@
+@font-face {
+    font-family: "parastoo-Regular";
+    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-FD-WOL.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "parastoo-Bold";
+    src: url('../fonts/web/Farsi-Digits-Without-Latin/Parastoo-Bold-FD-WOL.ttf') format("truetype");
+}
+
+body {
+    font-family: "parastoo-Regular";
+    user-select: none;
+}
+
+.font-bold {
+    font-family: "parastoo-Bold";
+}
+/* background */
+.bg-main {
+    background-color: #565acf;
+}
+.bg-second {
+    background-color: #f17732;
+}
+/* text color */
+.text-main {
+    color: #565acf;
+}
+.text-main2{
+    color: #1f2278;
+}
+.text-second {
+    color: #f17732;
+}
+/* cursor */
+.cursor {
+    cursor: pointer;
+}
+/* z index */
+.z-10 {
+    z-index: 10;
+}
+/* font size */
+.fs-14 {
+    font-size: 14px;
+}
+/* shadow */
+.shadow-main{
+    box-shadow: 0px 5px 20px 0px rgba(86, 90, 207, 0.3) !important;
+}
+/* global styles */
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .4s;
+}
+
+.transition {
+    transition: all .4s;
+}
+/* width */
+.w-40 {
+    width: 40px !important;
+}
+/* height */
+.h-40 {
+    height: 40px !important;
+}
+.h-105 {
+    height: 105px;
+}
+/* border */
+.border-main {
+    border: 1px solid #f17732;
+}
+/* rounded */
+.rounded-22 {
+    border-radius: 22px;
+}
+/* bottom */
+.bottom-24 {
+    bottom: -24px;
+}
+/* top */
+.top-37{
+    top: 37px;
+}
+/* right */
+.right-86 {
+    right: 86px;
+}
+/* rotate */
+.rotate-y-180{
+    transform: rotateY(180deg);
+}
+
+/* header */
+img[alt='logo'] {
+    width: 170px;
+}
+
+header {
+    position: relative;
+    z-index: 99;
+    font-size: 14px;
+}
+
+header #menuOverlay {
+    display: none;
+}
+
+header a {
+    color: #1f2278 !important;
+}
+
+header a:hover,
+header a.active,
+.teamSocials a:hover {
+    color: #f17732 !important;
+}
+header ul li:hover > a svg,header ul li.active > a svg {
+    transform: rotate(45deg);
+}
+header ul li ul{
+    box-shadow: 0px 1px 40px 0px rgba(0, 0, 0, 0.1);
+}
+header ul li:hover ul {
+    opacity: 100%;
+    top: 78px;
+    visibility: visible;
+}
+header ul li > a svg{
+    transition: all .5s;
+}
+header ul ul {
+    top: 105px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+    position: absolute;
+    width: 220px;
+}
+
+header ul ul div {
+    background-color: white;
+}
+
+header ul ul a {
+    color: #333c56 !important;
+}
+
+header ul ul li:last-child a {
+    border-bottom: none;
+}
+
+header ul ul a:hover {
+    transform: translateX(-9px);
+}
+/* responsive */
+@media only screen and (max-width:1400px) {}
+
+@media only screen and (max-width:1200px) {
+
+    .right-86 {
+        right: 0;
+    }
+
+    header #menuOverlay {
+        position: fixed;
+        inset: 0;
+        background-color: #000;
+        opacity: .7;
+        max-height: 0;
+        transition: all .4s;
+        display: block;
+    }
+
+    header #menuOverlay.active {
+        max-height: 100%;
+    }
+
+    header .menu {
+        position: fixed;
+        background: black;
+        top: 0;
+        bottom: 0;
+        right: -400px;
+        width: 300px;
+        line-height: 51px;
+        overflow-y: auto;
+        transition: all .4s;
+    }
+
+    header .menu.active {
+        right: 0;
+    }
+
+    header .menu>li {
+        border-bottom: 1px solid #313642;
+        padding: 0 12px;
+    }
+
+    header ul ul a {
+        border-bottom: 1px solid #313642 !important;
+    }
+
+    header ul ul li:last-child a {
+        border-bottom: none !important;
+    }
+
+    header .menu>li a.mobileactive {
+        color: #f17732 !important;
+    }
+
+    header ul ul::before {
+        display: none;
+    }
+
+    header ul ul {
+        position: static !important;
+        opacity: 100%;
+        visibility: visible;
+        max-height: 0;
+        overflow: hidden;
+        transition: all .4s;
+    }
+
+    header ul ul.active {
+        max-height: 1000px;
+    }
+
+    header .menu svg {
+        transition: all .4s;
+    }
+
+    header .menu svg.active {
+        transform: rotate(180deg);
+    }
+
+    header ul ul div {
+        background-color: transparent !important;
+    }
+
+    header ul ul a {
+        color: white !important;
+    }
+    .h-lg-auto{
+        height: auto!important;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    
+}
+
+@media only screen and (max-width:768px) {
+   
+}
+
+@media only screen and (max-width:576px) {
+  
+}
+
+@media only screen and (max-width:400px) {
+   
+}
