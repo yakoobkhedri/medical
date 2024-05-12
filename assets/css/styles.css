@@ -20,6 +20,9 @@ body {
 .bg-main {
     background-color: #565acf;
 }
+.bg-main-transparent{
+    background-color: rgba(86, 90, 207, 0.1);
+}
 .bg-second {
     background-color: #f17732;
 }
@@ -45,36 +48,44 @@ body {
 .fs-14 {
     font-size: 14px;
 }
+.fs-20 {
+    font-size: 20px;
+}
 /* shadow */
 .shadow-main{
     box-shadow: 0px 5px 20px 0px rgba(86, 90, 207, 0.3) !important;
 }
-/* global styles */
-a {
-    cursor: pointer;
-    text-decoration: none;
-    transition: all .4s;
-}
-
-.transition {
-    transition: all .4s;
-}
 /* width */
+.w-24 {
+    width: 24px !important;
+}
 .w-40 {
     width: 40px !important;
 }
+.w-48 {
+    width: 48px !important;
+}
 /* height */
+.h-4 {
+    height: 4px !important;
+}
 .h-40 {
     height: 40px !important;
+}
+.h-48 {
+    height: 48px !important;
 }
 .h-105 {
     height: 105px;
 }
 /* border */
-.border-main {
-    border: 1px solid #f17732;
+.border-main-2 {
+    border: 2px solid #565acf;
 }
 /* rounded */
+.rounded-8 {
+    border-radius: 8px;
+}
 .rounded-22 {
     border-radius: 22px;
 }
@@ -94,7 +105,26 @@ a {
 .rotate-y-180{
     transform: rotateY(180deg);
 }
+/* hover */
+.social-hover svg{
+    transition: all .4s ease-in-out;
+}
+.social-hover:hover{
+    background-color: #f17732;
+}
+.social-hover:hover svg{
+    color: white;
+}
+/* global styles */
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .4s;
+}
 
+.transition {
+    transition: all .4s;
+}
 /* header */
 img[alt='logo'] {
     width: 170px;
@@ -154,9 +184,18 @@ header ul ul li:last-child a {
     border-bottom: none;
 }
 
-header ul ul a:hover {
-    transform: translateX(-9px);
-}
+#hamicon.active>div span:first-child {
+    display: none!important;
+  }
+  
+  #hamicon.active>div span:nth-child(2) {
+    transform: rotate(42deg) translateX(2px)translateY(3px);
+  }
+  
+  #hamicon.active>div span:last-child {
+    transform: rotate(-44deg) translateX(3px)translateY(-3px);
+  }
+  
 /* responsive */
 @media only screen and (max-width:1400px) {}
 
@@ -165,7 +204,18 @@ header ul ul a:hover {
     .right-86 {
         right: 0;
     }
-
+    .w-xl-616{
+        width: 616px;
+    }
+    .w-xl-100{
+        width: 100%;
+    }
+    .border-bottom-gray-xl{
+        border-bottom: 1px solid #313642 !important;
+    }
+    .shadow-xl-0,header ul li ul {
+        box-shadow: none!important;
+    }
     header #menuOverlay {
         position: fixed;
         inset: 0;
@@ -182,25 +232,33 @@ header ul ul a:hover {
 
     header .menu {
         position: fixed;
-        background: black;
+        background: #171a1e;
         top: 0;
         bottom: 0;
-        right: -400px;
-        width: 300px;
+        left: -1400px;
+        width: 40%;
         line-height: 51px;
         overflow-y: auto;
-        transition: all .4s;
+        transition: all 1.3s;
     }
 
     header .menu.active {
-        right: 0;
+        left: 0;
+        width: 100%;
     }
-
+    header a {
+        color: white!important;
+    }
+    header a:hover,header a.active{
+        color: #565acf!important;
+    }
     header .menu>li {
         border-bottom: 1px solid #313642;
         padding: 0 12px;
     }
-
+    header .menu > ul > li{
+        border-bottom: 1px solid #313642 !important;
+    }
     header ul ul a {
         border-bottom: 1px solid #313642 !important;
     }

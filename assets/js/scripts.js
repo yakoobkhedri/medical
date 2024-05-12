@@ -1,9 +1,10 @@
 // mobile menu
 let menu=document.querySelector('header .menu');
-let li=Array.from(document.querySelectorAll('header .menu > li'));
+let li=Array.from(document.querySelectorAll('header .menu  > ul > li'));
 
 document.getElementById('hamicon').addEventListener('click',function () {
   menu.classList.add('active');
+  document.getElementById('hamicon').classList.add('active');
   document.getElementById('menuOverlay').classList.add('active');
   document.getElementById('menuOverlay').addEventListener('click',function () {
     this.classList.remove('active');
@@ -12,6 +13,7 @@ document.getElementById('hamicon').addEventListener('click',function () {
 })
 document.getElementById('closeMenu').addEventListener('click',function () {
   menu.classList.remove('active');
+  document.getElementById('hamicon').classList.remove('active');
   document.getElementById('menuOverlay').classList.remove('active');
 })
 
