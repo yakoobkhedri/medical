@@ -26,6 +26,11 @@ body {
 .bg-second {
     background-color: #f17732;
 }
+.bg-text{
+    background-image: url('../img/ext-orange.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 /* text color */
 .text-main {
     color: #565acf;
@@ -41,6 +46,12 @@ body {
     cursor: pointer;
 }
 /* z index */
+.-z-1 {
+    z-index: -1;
+}
+.z-1 {
+    z-index: 1;
+}
 .z-10 {
     z-index: 10;
 }
@@ -50,6 +61,12 @@ body {
 }
 .fs-20 {
     font-size: 20px;
+}
+.fs-24 {
+    font-size: 24px;
+}
+.fs-36 {
+    font-size: 36px;
 }
 /* shadow */
 .shadow-main{
@@ -78,13 +95,23 @@ body {
 .h-105 {
     height: 105px;
 }
+/* padding */
+.p-40{
+    padding: 40px;
+}
 /* border */
 .border-main-2 {
     border: 2px solid #565acf;
 }
+.border-main-3{
+    border: 2px solid #dddef6;
+}
 /* rounded */
 .rounded-8 {
     border-radius: 8px;
+}
+.rounded-20 {
+    border-radius: 20px;
 }
 .rounded-22 {
     border-radius: 22px;
@@ -93,17 +120,46 @@ body {
 .bottom-24 {
     bottom: -24px;
 }
+.-bottom-63 {
+    bottom: -63px;
+}
 /* top */
 .top-37{
     top: 37px;
 }
+.top-52{
+    top: 52px;
+}
+.top-305{
+    top: 305px;
+}
+.top-355{
+    top: 355px;
+}
+/* left */
+.-left-38{
+    left: -38px;
+}
+.left-79{
+    left: 79px;
+}
 /* right */
+.-right-38{
+    right: -38px;
+}
 .right-86 {
     right: 86px;
+}
+.right-215{
+    right: 215px;
 }
 /* rotate */
 .rotate-y-180{
     transform: rotateY(180deg);
+}
+/* overflow */
+.overflow-y-hidden{
+    overflow-y: hidden;
 }
 /* hover */
 .social-hover svg{
@@ -115,6 +171,118 @@ body {
 .social-hover:hover svg{
     color: white;
 }
+/* keyframe */
+.rotate{
+    animation: rotate 12s ease 0s infinite normal none;
+}
+.bounce-right{
+    animation: bounce-right 12s ease 0s infinite normal none;
+}
+.bounce-top{
+    animation: bounce-top 12s ease 0s infinite normal none;
+}
+@keyframes rotate {
+  0% {
+	transform: rotate(0);
+  }
+
+  100% {
+	transform: rotate(360deg);
+  }
+}
+@keyframes bounce-right {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateX(48px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateX(26px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateX(13px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateX(6.5px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateX(4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+      animation-timing-function: ease-out;
+      transform: translateX(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  /* Copy this code after the above code */
+@keyframes bounce-top {
+    0% {
+      animation-timing-function: ease-in;
+      opacity: 1;
+      transform: translateY(-45px);
+    }
+  
+    24% {
+      opacity: 1;
+    }
+  
+    40% {
+      animation-timing-function: ease-in;
+      transform: translateY(-24px);
+    }
+  
+    65% {
+      animation-timing-function: ease-in;
+      transform: translateY(-12px);
+    }
+  
+    82% {
+      animation-timing-function: ease-in;
+      transform: translateY(-6px);
+    }
+  
+    93% {
+      animation-timing-function: ease-in;
+      transform: translateY(-4px);
+    }
+  
+    25%,
+    55%,
+    75%,
+    87% {
+      animation-timing-function: ease-out;
+      transform: translateY(0px);
+    }
+  
+    100% {
+      animation-timing-function: ease-out;
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+  
 /* global styles */
 a {
     cursor: pointer;
@@ -195,7 +363,49 @@ header ul ul li:last-child a {
   #hamicon.active>div span:last-child {
     transform: rotate(-44deg) translateX(3px)translateY(-3px);
   }
-  
+  /* team */
+  .team:hover{
+    box-shadow: 0px 10px 50px 0px rgba(0, 2, 72, 0.1);
+  z-index: 9;
+  border-color: #fff;
+  }
+  .team:hover >div:first-child::before,.team:hover >div:first-child::after{
+    opacity: 1;
+  }
+  .team >div:first-child::before,.team >div:first-child::after  {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 88%;
+      height: 150%;
+      background-repeat: no-repeat;
+      background-position: center;
+      -webkit-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      transition: all 0.5s;
+      opacity: 0.2;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+  }
+    .team >div:first-child::before {
+    background-image: url(../img/shape2.png);
+    background-size: 77%;
+  }
+  .team >div:first-child::after {
+    background-image: url(../img/shape1.png);
+  background-size: 100%;
+  }
+  .team > div:first-child div{
+    width: 54%;
+  transform: rotate(45deg);
+  overflow: hidden;
+  margin: auto;
+  }
+  .team img{
+  max-width: 100%;
+  transform: rotate(-45deg);
+  }
 /* responsive */
 @media only screen and (max-width:1400px) {}
 
@@ -317,7 +527,9 @@ header ul ul li:last-child a {
 }
 
 @media only screen and (max-width:576px) {
-  
+  .fs-sm-28{
+    font-size: 28px;
+  }
 }
 
 @media only screen and (max-width:400px) {
