@@ -11,6 +11,7 @@
 body {
     font-family: "parastoo-Regular";
     user-select: none;
+    overflow-x: hidden;
 }
 
 .font-bold {
@@ -55,7 +56,13 @@ body {
 .z-10 {
     z-index: 10;
 }
+.z-20 {
+    z-index: 20;
+}
 /* font size */
+.fs-12 {
+    font-size: 12px;
+}
 .fs-14 {
     font-size: 14px;
 }
@@ -76,18 +83,36 @@ body {
 .w-24 {
     width: 24px !important;
 }
+.w-30 {
+    width: 30px !important;
+}
+.w-34 {
+    width: 34px !important;
+}
 .w-40 {
     width: 40px !important;
 }
 .w-48 {
     width: 48px !important;
 }
+.w-155 {
+    width: 155px !important;
+}
 /* height */
 .h-4 {
     height: 4px !important;
 }
+.h-30 {
+    height: 30px !important;
+}
+.h-34 {
+    height: 34px !important;
+}
 .h-40 {
     height: 40px !important;
+}
+.h-44 {
+    height: 44px !important;
 }
 .h-48 {
     height: 48px !important;
@@ -120,6 +145,9 @@ body {
 .bottom-24 {
     bottom: -24px;
 }
+.bottom-34 {
+    bottom: 34px;
+}
 .-bottom-63 {
     bottom: -63px;
 }
@@ -137,6 +165,9 @@ body {
     top: 355px;
 }
 /* left */
+.left-34{
+    left: 34px;
+}
 .-left-38{
     left: -38px;
 }
@@ -171,6 +202,10 @@ body {
 .social-hover:hover svg{
     color: white;
 }
+.main-hover:hover{
+    background-color: #565acf!important;
+    color: white;
+}
 /* keyframe */
 .rotate{
     animation: rotate 12s ease 0s infinite normal none;
@@ -178,8 +213,14 @@ body {
 .bounce-right{
     animation: bounce-right 12s ease 0s infinite normal none;
 }
+.bounce-right2{
+    animation: bounce-right 9s ease 0s infinite normal none;
+}
 .bounce-top{
     animation: bounce-top 12s ease 0s infinite normal none;
+}
+.bounce-top2{
+    animation: bounce-top 9s ease 0s infinite normal none;
 }
 @keyframes rotate {
   0% {
@@ -364,7 +405,7 @@ header ul ul li:last-child a {
     transform: rotate(-44deg) translateX(3px)translateY(-3px);
   }
   /* team */
-  .team:hover{
+  .team:hover,.card-hover:hover{
     box-shadow: 0px 10px 50px 0px rgba(0, 2, 72, 0.1);
   z-index: 9;
   border-color: #fff;
@@ -406,6 +447,13 @@ header ul ul li:last-child a {
   max-width: 100%;
   transform: rotate(-45deg);
   }
+  /* blog */
+  #blogSection{
+    background-image: url('../img/line-bg2.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 /* responsive */
 @media only screen and (max-width:1400px) {}
 
@@ -413,6 +461,9 @@ header ul ul li:last-child a {
 
     .right-86 {
         right: 0;
+    }
+    .bg-xl-dark{
+        background-color: #171a1e !important;
     }
     .w-xl-616{
         width: 616px;
@@ -468,6 +519,9 @@ header ul ul li:last-child a {
     }
     header .menu > ul > li{
         border-bottom: 1px solid #313642 !important;
+    }
+    header .menu > ul > li:last-child,  header .menu > ul > li:first-child{
+        border-bottom: none!important;
     }
     header ul ul a {
         border-bottom: 1px solid #313642 !important;

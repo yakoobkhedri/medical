@@ -31,20 +31,37 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 // swiper
-var menuSwiper = new Swiper(".team", {
+var teamSwiper = new Swiper(".teamSwiper", {
   loop: true,
   autoplay: true,
   slidesPerView: 3,
-  spaceBetween:40,
+  spaceBetween:20,
   breakpoints:{
-    1200:{
-      slidesPerView:2
+    576:{
+      slidesPerView:1
     },
     992:{
       slidesPerView:2
     },
-    576:{
+    1200:{
+      slidesPerView:3
+    },
+  }
+});
+var blogSwiper = new Swiper(".blogSwiper", {
+  loop: true,
+  autoplay: true,
+  slidesPerView: 3,
+  spaceBetween:20,
+  breakpoints:{
+    768:{
       slidesPerView:1
-    }
+    },
+    992:{
+      slidesPerView:2
+    },
+    1200:{
+      slidesPerView:3
+    },
   }
 });
