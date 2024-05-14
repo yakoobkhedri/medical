@@ -33,7 +33,10 @@ Fancybox.bind("[data-fancybox]", {
 // swiper
 var teamSwiper = new Swiper(".teamSwiper", {
   loop: true,
-  autoplay: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   slidesPerView: 3,
   spaceBetween:20,
   breakpoints:{
@@ -50,7 +53,10 @@ var teamSwiper = new Swiper(".teamSwiper", {
 });
 var blogSwiper = new Swiper(".blogSwiper", {
   loop: true,
-  autoplay: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
   slidesPerView: 3,
   spaceBetween:20,
   breakpoints:{
