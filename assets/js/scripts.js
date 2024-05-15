@@ -24,13 +24,21 @@ li.forEach((item)=>{
     item.querySelector('a').classList.toggle('mobileactive');
   })
 })
-
+// scroll event
+window.addEventListener('scroll',()=>{
+  if (window.scrollY>100) {
+    document.querySelector('header').style.backgroundColor='white';
+    document.querySelector('header').style.boxShadow=' 0 0 50px 0 rgba(0, 0, 0, 0.1)'
+  } else {
+    document.querySelector('header').style.backgroundColor='transparent';
+    document.querySelector('header').style.boxShadow='none'
+  }
+})
 // fancybox
 
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
-// swiper
 // swiper
 var teamSwiper= new Swiper(".teamSwiper", {
   loop: true,
