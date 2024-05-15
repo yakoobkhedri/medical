@@ -93,6 +93,11 @@ body {
 .shadow-footerLink {
     box-shadow: 0px 4px 18px 5px #8D50EF80;
   }
+  /* max width */
+  .max-w-1132{
+    max-width: 1132px;
+    width: 100%;
+  }
 /* width */
 .w-24 {
     width: 24px !important;
@@ -160,6 +165,9 @@ body {
 /* rounded */
 .rounded-8 {
     border-radius: 8px;
+}
+.rounded-10 {
+    border-radius: 10px;
 }
 .rounded-20 {
     border-radius: 20px;
