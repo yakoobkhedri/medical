@@ -109,6 +109,9 @@ body {
 .w-48 {
     width: 48px !important;
 }
+.w-60 {
+    width: 60px !important;
+}
 .w-70 {
     width: 70px !important;
 }
@@ -133,6 +136,9 @@ body {
 }
 .h-48 {
     height: 48px !important;
+}
+.h-60 {
+    height: 60px !important;
 }
 .h-70 {
     height: 70px !important;
@@ -162,8 +168,8 @@ body {
     border-radius: 22px;
 }
 /* bottom */
-.-bottom-16 {
-    bottom: -16px;
+.-bottom-21 {
+    bottom: -21px;
 }
 .bottom-24 {
     bottom: -24px;
@@ -201,8 +207,8 @@ body {
     left: 79px;
 }
 /* right */
-.right-14{
-    right: 14px;
+.right-15{
+    right: 15px;
 }
 .-right-38{
     right: -38px;
