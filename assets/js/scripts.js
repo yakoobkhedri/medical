@@ -31,43 +31,21 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 // swiper
-var teamSwiper = new Swiper(".teamSwiper", {
+// swiper
+var teamSwiper= new Swiper(".teamSwiper", {
   loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
+  spaceBetween: 35,
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 3,
+    }
   },
-  slidesPerView: 3,
-  spaceBetween:20,
-  breakpoints:{
-    576:{
-      slidesPerView:1
-    },
-    992:{
-      slidesPerView:2
-    },
-    1200:{
-      slidesPerView:3
-    },
-  }
-});
-var blogSwiper = new Swiper(".blogSwiper", {
-  loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 2500,
     disableOnInteraction: false,
-  },
-  slidesPerView: 3,
-  spaceBetween:20,
-  breakpoints:{
-    768:{
-      slidesPerView:1
-    },
-    992:{
-      slidesPerView:2
-    },
-    1200:{
-      slidesPerView:3
-    },
   }
 });
