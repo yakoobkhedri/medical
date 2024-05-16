@@ -128,11 +128,18 @@ body {
 }
 
 /* max width */
+.max-w-100 {
+    max-width: 100%;
+    width: 100%;
+}
+.max-w-526 {
+    max-width: 526px;
+    width: 100%;
+}
 .max-w-1132 {
     max-width: 1132px;
     width: 100%;
 }
-
 /* width */
 .w-24 {
     width: 24px !important;
@@ -319,7 +326,10 @@ body {
 .opacity-50 {
     opacity: 50%;
 }
-
+/* outline */
+.outline-none{
+    outline: none;
+}
 /* overflow */
 .overflow-y-hidden {
     overflow-y: hidden;

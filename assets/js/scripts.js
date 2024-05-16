@@ -26,7 +26,7 @@ li.forEach((item)=>{
 })
 // scroll event
 window.addEventListener('scroll',()=>{
-  if (window.scrollY>100) {
+  if (window.scrollY>40) {
     document.querySelector('header').style.backgroundColor='white';
     document.querySelector('header').style.boxShadow=' 0 0 50px 0 rgba(0, 0, 0, 0.1)'
   } else {
