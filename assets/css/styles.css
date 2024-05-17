@@ -41,6 +41,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+.bg-text2 {
+    background-image: url('../img/ext-orange2.PNG');
+    background-position: right;
+    background-repeat: no-repeat;
+}
 .bg-black-blur{
     background-color: #000000a1;
 }
@@ -122,7 +127,9 @@ body {
 .shadow-main {
     box-shadow: 0px 5px 20px 0px rgba(86, 90, 207, 0.3) !important;
 }
-
+.shadow-second{
+    box-shadow: 0px 5px 20px 0px rgba(241, 119, 50, 0.3) !important;
+}
 .shadow-footerLink {
     box-shadow: 0px 4px 18px 5px #8D50EF80;
 }
@@ -178,6 +185,9 @@ body {
 }
 .w-155 {
     width: 155px !important;
+}
+.w-180 {
+    width: 180px !important;
 }
 .w-191 {
     width: 191px !important;
@@ -293,7 +303,9 @@ body {
 .-top-63 {
     top: -63px;
 }
-
+.-top-108 {
+    top: -108px;
+}
 .top-305 {
     top: 305px;
 }
@@ -410,7 +422,9 @@ body {
 .bounce-top2 {
     animation: bounce-top 9s ease 0s infinite normal none;
 }
-
+.bounce-top-down {
+    animation: bounce-top-down 16s ease-in-out infinite;
+}
 @keyframes rotate {
     0% {
         transform: rotate(0);
@@ -467,8 +481,6 @@ body {
         transform: translateX(0px);
     }
 }
-
-/* Copy this code after the above code */
 @keyframes bounce-top {
     0% {
         animation-timing-function: ease-in;
@@ -514,7 +526,33 @@ body {
         transform: translateY(0px);
     }
 }
+@keyframes bounce-top-down {
+    0%,
+	100% {
+		transform: translateY(0);
+	}
 
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateY(-8px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateY(8px);
+	}
+
+	80% {
+		transform: translateY(6.4px);
+	}
+
+	90% {
+		transform: translateY(-6.4px);
+	}
+}
 /* global styles */
 a {
     cursor: pointer;
@@ -661,7 +699,25 @@ header ul ul li:last-child a {
 #hamicon.active>div span:last-child {
     transform: rotate(-44deg) translateX(3px)translateY(-3px);
 }
-
+/* banner */
+.bannerShape{
+  background-image: url('../img/bg1.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bannerShape::after{
+    content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  background-image: url('../img/shape12.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 100%;
+}
 /* team */
 .team:hover,
 .card-hover:hover {
