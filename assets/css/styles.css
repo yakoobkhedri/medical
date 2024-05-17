@@ -842,6 +842,9 @@ header ul ul li:last-child a {
     .fs-sm-28 {
         font-size: 28px;
     }
+    .-right-sm-8{
+        right: -8px;
+    }
     .w-sm-49{
         width: 49px!important;
     }
