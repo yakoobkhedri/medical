@@ -836,8 +836,25 @@ header ul ul li:last-child a {
 @media only screen and (max-width:768px) {}
 
 @media only screen and (max-width:576px) {
+    .fs-sm-12 {
+        font-size: 12px;
+    }
     .fs-sm-28 {
         font-size: 28px;
+    }
+    .w-sm-49{
+        width: 49px!important;
+    }
+    .clip-path, .clip-path2, .clip-path3 {
+        width: 106px;
+        height: 106px;
+    }
+    .clip-path2 {
+        width: 121px;
+        height: 109px;
+    }
+    .clip-path3 {
+        width: 109px;
     }
 }
 
