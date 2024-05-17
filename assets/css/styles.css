@@ -170,6 +170,9 @@ body {
 .w-70 {
     width: 70px !important;
 }
+.w-92 {
+    width: 92px !important;
+}
 .w-148 {
     width: 148px !important;
 }
@@ -220,6 +223,9 @@ body {
 }
 .h-86 {
     height: 86px !important;
+}
+.h-92 {
+    height: 92px !important;
 }
 .h-105 {
     height: 105px;
@@ -889,9 +895,11 @@ header ul ul li:last-child a {
         width: 112px;
     }
 }
-
 @media only screen and (min-width:430px) {
     .d-xs-none {
         display: none;
+    }
+    .d-xs-block {
+        display: block!important;
     }
 }
