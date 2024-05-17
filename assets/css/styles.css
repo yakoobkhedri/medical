@@ -177,6 +177,9 @@ body {
 .w-191 {
     width: 191px !important;
 }
+.w-280 {
+    width: 280px !important;
+}
 /* height */
 .h-4 {
     height: 4px !important;
@@ -211,7 +214,9 @@ body {
 .h-70 {
     height: 70px !important;
 }
-
+.h-86 {
+    height: 86px !important;
+}
 .h-105 {
     height: 105px;
 }
@@ -316,7 +321,13 @@ body {
 .right-215 {
     right: 215px;
 }
-
+/* tab */
+.tabContent > div{
+    display: none;
+}
+.tabContent > div.active{
+   display: block;
+}
 /* rotate */
 .rotate-y-180 {
     transform: rotateY(180deg);
@@ -853,11 +864,11 @@ header ul ul li:last-child a {
         height: 106px;
     }
     .clip-path2 {
-        width: 121px;
+        width: 116px;
         height: 109px;
     }
     .clip-path3 {
-        width: 109px;
+        width: 112px;
     }
 }
 

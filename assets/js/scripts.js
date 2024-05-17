@@ -57,3 +57,28 @@ var teamSwiper= new Swiper(".teamSwiper", {
     disableOnInteraction: false,
   }
 });
+var days= new Swiper(".days", {
+  loop: true,
+  spaceBetween: 35,
+  slidesPerView: 1,
+});
+// tabs
+
+let tabs = Array.from(document.getElementsByClassName('tabs'))
+let tabContent = Array.from(document.querySelectorAll('.tabContent > div'));
+
+tabs.forEach((tab) => {
+    tab.addEventListener('click', function() {
+      tabs.forEach((tabs) => {tabs.classList.remove('active')});
+      tab.classList.add('active')
+        let tabId = tab.dataset.id;
+        tabContent.forEach((content) => {
+            let contentId = content.dataset.id;
+            if (tabId === contentId) {
+                content.style.display = 'block';
+            } else {
+                content.style.display = 'none';
+            }
+        })
+    })
+})
