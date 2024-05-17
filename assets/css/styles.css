@@ -152,7 +152,9 @@ body {
 .w-34 {
     width: 34px !important;
 }
-
+.w-37 {
+    width: 37px !important;
+}
 .w-40 {
     width: 40px !important;
 }
@@ -194,7 +196,9 @@ body {
 .h-34 {
     height: 34px !important;
 }
-
+.h-37 {
+    height: 37px !important;
+}
 .h-40 {
     height: 40px !important;
 }
@@ -293,6 +297,9 @@ body {
 }
 
 /* left */
+.-left-27 {
+    left: -27px;
+}
 .left-34 {
     left: 34px;
 }
@@ -309,7 +316,9 @@ body {
 .right-15 {
     right: 15px;
 }
-
+.-right-27 {
+    right:-27px;
+}
 .-right-38 {
     right: -38px;
 }
@@ -707,7 +716,12 @@ header ul ul li:last-child a {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/* swiper */
+.swiper-button-prev::after,.swiper-button-next::after {
+    color: white!important;
+    font-weight: bold!important;
+    font-size: 12px!important;
+  }
 /* responsive */
 @media only screen and (max-width:1400px) {}
 
@@ -844,11 +858,15 @@ header ul ul li:last-child a {
 
 @media only screen and (max-width:992px) {}
 
-@media only screen and (max-width:768px) {}
+@media only screen and (max-width:768px) {
+}
 
 @media only screen and (max-width:576px) {
     .fs-sm-12 {
         font-size: 12px;
+    }
+    .fs-sm-14 {
+        font-size: 14px;
     }
     .fs-sm-28 {
         font-size: 28px;

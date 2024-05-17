@@ -55,12 +55,20 @@ var teamSwiper= new Swiper(".teamSwiper", {
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  }
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 var days= new Swiper(".days", {
   loop: true,
   spaceBetween: 35,
   slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
 // tabs
 
