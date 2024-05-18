@@ -161,7 +161,9 @@ body {
 .w-24 {
     width: 24px !important;
 }
-
+.w-26 {
+    width: 26px !important;
+}
 .w-30 {
     width: 30px !important;
 }
@@ -187,8 +189,14 @@ body {
 .w-70 {
     width: 70px !important;
 }
+.w-80 {
+    width: 80px !important;
+}
 .w-92 {
     width: 92px !important;
+}
+.w-99 {
+    width: 99px !important;
 }
 .w-130 {
     width: 130px !important;
@@ -212,7 +220,9 @@ body {
 .h-4 {
     height: 4px !important;
 }
-
+.h-26 {
+    height: 26px !important;
+}
 .h-30 {
     height: 30px !important;
 }
@@ -236,7 +246,9 @@ body {
 .h-48 {
     height: 48px !important;
 }
-
+.h-52 {
+    height: 52px !important;
+}
 .h-60 {
     height: 60px !important;
 }
@@ -290,7 +302,12 @@ body {
 .rounded-22 {
     border-radius: 22px;
 }
-
+.rounded-30-bl-0{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0px;
+}
 /* bottom */
 .-bottom-21 {
     bottom: -21px;
@@ -303,7 +320,9 @@ body {
 .bottom-34 {
     bottom: 34px;
 }
-
+.-bottom-52 {
+    bottom: -52px;
+}
 .-bottom-63 {
     bottom: -63px;
 }
@@ -324,6 +343,9 @@ body {
 
 .-top-63 {
     top: -63px;
+}
+.-top-92 {
+    top: -92px;
 }
 .-top-108 {
     top: -108px;
@@ -367,10 +389,15 @@ body {
 .-right-45 {
     right: -45px;
 }
+.right-62 {
+    right: 62px;
+}
 .right-86 {
     right: 86px;
 }
-
+.right-170 {
+    right: 170px;
+}
 .right-215 {
     right: 215px;
 }
@@ -877,6 +904,26 @@ header ul ul li:last-child a {
     color: white!important;
     font-weight: bold!important;
     font-size: 12px!important;
+  }
+  /* footer */
+.footer-title::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 85px;
+    height: 7px;
+    background-image: url('../img/footer-line.png');
+    background-repeat: no-repeat;
+  }
+  .mail-input{
+    box-shadow: 0px 10px 60px 0px rgba(31, 34, 120, 0.1);
+    transition: all .4s;
+    border:1px solid transparent;
+  }
+  .mail-input:hover{
+    border:1px solid #E1E1F0;
+    box-shadow: none;
   }
 /* responsive */
 @media only screen and (max-width:1400px) {}
