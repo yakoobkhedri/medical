@@ -116,3 +116,6 @@ tabs.forEach((tab) => {
         })
     })
 })
+
+  // aos
+  AOS.init();
