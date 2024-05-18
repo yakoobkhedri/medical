@@ -40,6 +40,15 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 // swiper
+var bannerSwiper= new Swiper(".bannerSwiper", {
+  loop: true,
+  spaceBetween: 35,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
 var teamSwiper= new Swiper(".teamSwiper", {
   loop: true,
   spaceBetween: 35,
