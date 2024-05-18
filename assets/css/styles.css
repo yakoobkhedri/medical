@@ -42,7 +42,7 @@ body {
     background-repeat: no-repeat;
 }
 .bg-text2 {
-    background-image: url('../img/ext-orange2.PNG');
+    /* background-image: url('../img/ext-orange2.PNG'); */
     background-position: right;
     background-repeat: no-repeat;
 }
@@ -930,7 +930,6 @@ header ul ul li:last-child a {
     height: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
-    /* z-index: -1; */
     background-position: left top;
   }
 .footer-title::after {
@@ -1083,7 +1082,9 @@ header ul ul li:last-child a {
     header ul ul a {
         color: white !important;
     }
-
+    .left-xl-0{
+        left: 0;
+    }
     .h-lg-auto {
         height: auto !important;
     }
@@ -1092,6 +1093,19 @@ header ul ul li:last-child a {
 @media only screen and (max-width:992px) {
     .pt-lg-70{
         padding-top: 70px;
+    }
+    .fs-lg-24{
+        font-size: 24px;
+    }
+    #services::after {
+        width: 100%;
+        border-radius: 0px;
+      }
+      .text-lg-white{
+        color: white;
+      }
+      .bg-text3 {
+        background-image: url('../img/ext-orange3.PNG');
     }
 }
 
@@ -1116,6 +1130,12 @@ header ul ul li:last-child a {
     }
     .w-sm-49{
         width: 49px!important;
+    }
+    .w-sm-127{
+        width: 127px!important;
+    }
+    .h-sm-41{
+        height: 41px!important;
     }
     .clip-path, .clip-path2, .clip-path3 {
         width: 106px;
