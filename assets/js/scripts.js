@@ -61,6 +61,23 @@ var teamSwiper= new Swiper(".teamSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+var services= new Swiper(".services", {
+  loop: true,
+  spaceBetween: 35,
+  slidesPerView: 1,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    1200: {
+      slidesPerView: 2.8,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
 var days= new Swiper(".days", {
   loop: true,
   spaceBetween: 35,
