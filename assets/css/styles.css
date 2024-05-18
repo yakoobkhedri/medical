@@ -385,11 +385,11 @@ body {
     left: -38px;
 }
 
+.-left-44 {
+    left: -44px;
+}
 .left-79 {
     left: 79px;
-}
-.-left-107 {
-    left: -144px;
 }
 /* right */
 .right-15 {
@@ -872,6 +872,9 @@ header ul ul li:last-child a {
     transform: rotate(-45deg);
 }
 /* services */
+#services{
+    padding-right: calc((100% - 1200px) / 2);
+}
 #services::after {
     content: "";
     background-color: #565acf;

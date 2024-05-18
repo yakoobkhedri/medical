@@ -70,7 +70,7 @@ var services= new Swiper(".services", {
       slidesPerView: 2,
     },
     1200: {
-      slidesPerView: 2.8,
+      slidesPerView: 2.9,
     }
   },
   autoplay: {
