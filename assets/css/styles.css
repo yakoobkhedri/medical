@@ -99,6 +99,10 @@ body {
 .z-9999 {
     z-index: 9999;
 }
+/* padding */
+.pt-150{
+    padding-top: 150px;
+}
 /* margin */
 .-mt-60 {
     margin-top: -60px;
@@ -319,6 +323,9 @@ body {
 
 .bottom-34 {
     bottom: 34px;
+}
+.-bottom-45 {
+    bottom: -45px;
 }
 .-bottom-52 {
     bottom: -52px;
@@ -906,6 +913,26 @@ header ul ul li:last-child a {
     font-size: 12px!important;
   }
   /* footer */
+  footer{
+    background-image: url('../img/footer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  footer::after {
+    content: "";
+    background-image: url('../img/footer-shape.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* z-index: -1; */
+    background-position: left top;
+  }
 .footer-title::after {
     content: "";
     position: absolute;
@@ -924,6 +951,9 @@ header ul ul li:last-child a {
   .mail-input:hover{
     border:1px solid #E1E1F0;
     box-shadow: none;
+  }
+  footer ul a:hover{
+    color: #565acf!important;
   }
 /* responsive */
 @media only screen and (max-width:1400px) {}
@@ -1059,7 +1089,11 @@ header ul ul li:last-child a {
     }
 }
 
-@media only screen and (max-width:992px) {}
+@media only screen and (max-width:992px) {
+    .pt-lg-70{
+        padding-top: 70px;
+    }
+}
 
 @media only screen and (max-width:768px) {
 }
@@ -1070,6 +1104,9 @@ header ul ul li:last-child a {
     }
     .fs-sm-14 {
         font-size: 14px;
+    }
+    .fs-sm-20 {
+        font-size: 20px;
     }
     .fs-sm-28 {
         font-size: 28px;
@@ -1090,6 +1127,11 @@ header ul ul li:last-child a {
     }
     .clip-path3 {
         width: 112px;
+    }
+}
+@media only screen and (max-width:430px) {
+    footer{
+        padding-bottom: 126px;
     }
 }
 @media only screen and (min-width:430px) {
