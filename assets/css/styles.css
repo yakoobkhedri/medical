@@ -104,13 +104,15 @@ body {
     padding-top: 150px;
 }
 /* margin */
-.-mt-60 {
-    margin-top: -60px;
-}
 .mb-12 {
     margin-bottom: 12px;
 }
-
+.-mt-60 {
+    margin-top: -60px;
+}
+.-mt-150 {
+    margin-top: -150px;
+}
 /* font size */
 .fs-10 {
     font-size: 10px;
@@ -162,6 +164,9 @@ body {
     width: 100%;
 }
 /* width */
+.w-16 {
+    width: 16px !important;
+}
 .w-24 {
     width: 24px !important;
 }
@@ -223,6 +228,9 @@ body {
 /* height */
 .h-4 {
     height: 4px !important;
+}
+.h-16 {
+    height: 16px !important;
 }
 .h-26 {
     height: 26px !important;
@@ -752,7 +760,7 @@ header ul li ul {
 
 header ul li:hover ul {
     opacity: 100%;
-    top: 78px;
+    top: 109px;
     visibility: visible;
 }
 
@@ -1154,7 +1162,7 @@ header ul ul li:last-child a {
         padding-bottom: 126px;
     }
 }
-@media only screen and (min-width:430px) {
+@media only screen and (min-width:435px) {
     .d-xs-none {
         display: none;
     }

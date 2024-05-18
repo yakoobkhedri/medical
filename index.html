@@ -396,9 +396,40 @@
 
   <!-- header -->
 
-  <header class="h-105 position-sticky top-0 transition">
+  <header class="position-sticky top-0 transition">
 
-    <nav class="container d-flex justify-content-between align-items-center fw-bold h-100">
+    <div class="py-2 border-bottom">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="d-flex align-items-center justify-content-start gap-3">
+          <a>
+           <img alt="icon" src="assets/img/facebook.png" class="d-block img-fluid w-16 h-16">
+          </a>
+          <a>
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter text-info" viewBox="0 0 16 16">
+             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"></path>
+           </svg>
+          </a>
+          <a>
+           <img alt="icon" src="assets/img/instagram.png" class="d-block img-fluid w-16 h-16">
+          </a>
+          <a>
+           <img alt="icon" src="assets/img/linkedin.png" class="d-block img-fluid w-16 h-16">
+          </a>
+         </div>
+        <a class="d-flex align-items-center gap-3">
+          <div class="w-34 h-34 bg-main-transparent rounded-8 d-flex align-items-center justify-content-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="text-main bi bi-telephone-fill" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+            </svg>
+          </div>
+          <p class="mb-0 text-main2 font-bold"> (+01) 999 888 777</p>
+        </a>
+      </div>
+    </div>
+
+    <nav class="container d-flex justify-content-between align-items-center fw-bold py-3">
 
       <!-- menu overlay -->
       <div id="menuOverlay"></div>
@@ -538,16 +569,6 @@
               d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
           </svg>
         </div>
-        <a class="d-xxl-flex d-none align-items-center gap-3">
-          <div class="w-40 h-40 bg-main-transparent rounded-8 d-flex align-items-center justify-content-center">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="text-main bi bi-telephone-fill" viewBox="0 0 16 16">
-              <path fill-rule="evenodd"
-                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-            </svg>
-          </div>
-          <p class="mb-0 fs-20 text-main2 font-bold"> (+01) 999 888 777</p>
-        </a>
         <a
           class="d-xl-flex d-none align-items-center main-text transition gap-3 p-1 pe-5 rounded-3 bg-main shadow-main">
           <span class="text-white transition font-bold">تماس با ما</span>
@@ -569,28 +590,26 @@
   <main>
 
     <!-- banner -->
-    <section class="bannerShape position-relative -top-108">
+    <section class="bannerShape position-relative -mt-150">
       <div class="container py-5">
-        <div class="row mx-0 g-4 align-items-center py-5 mb-5 mt-4 position-relative z-1">
-          <div class="col-lg-1 d-none d-xl-block"></div>
-          <div class="col-xl-6 col-md-7 position-relative">
+        <div class="row mx-0 g-4 align-items-center py-5 mb-5 mt-5 position-relative z-1">
+          <div class="col-xl-5 col-md-5 position-relative">
             <!-- shape -->
-            <img alt="shape" src="assets/img/trangle-orange.png" class="position-absolute d-none d-lg-block -bottom-84 -right-45 -z-1 bounce-top">
-            <img alt="img" src="assets/img/chicle-blue-2.png" class="position-absolute d-none d-lg-block end-0 start-0 -mt-60 mx-auto -z-1">
-            <img alt="img" src="assets/img/plus-orange.png" class="position-absolute start-0 d-none d-lg-block -bottom-140 -z-1">
+              <img alt="img" src="assets/img/square-blue.png" class="position-absolute d-none d-lg-block start-0 bounce-top-down2 -z-1">
+              <img alt="shape" src="assets/img/wave-orange.png" class="position-absolute d-none d-lg-block bottom-0 end-0 -z-1 bounce-right">
+            <!--  -->
+            <img alt="img" src="assets/img/doctor.png" class="img-fluid w-100 bounce-top-down">
+          </div>
+          <div class="col-xl-7 col-md-7 position-relative">
+            <!-- shape -->
+            <img alt="shape" src="assets/img/trangle-orange.png" class="position-absolute d-none d-lg-block -bottom-84 start-0 -z-1 bounce-top">
+            <img alt="img" src="assets/img/chicle-blue-2.png" class="position-absolute d-none d-lg-block right-86 -mt-60 -z-1">
+            <img alt="img" src="assets/img/plus-orange.png" class="position-absolute start-0 d-none d-lg-block -bottom-140 end-0 -z-1">
             <!--  -->
             <h6 class="mb-4 text-main font-bold bg-text2 py-3 px-4 fs-sm-14">ما همه راه حل های مراقبت های بهداشتی را ارائه می دهیم</h6>
             <h3 class="fs-36 fs-lg-24 font-bold text-main2 mb-5">از سلامتی خود محافظت کنید و مراقب سلامتی خود باشید</h3>
             <a class="w-180 w-sm-127 h-sm-41 h-60 fs-sm-14 rounded-8 bg-second d-flex align-items-center justify-content-center shadow-second text-white fw-bold">بیشتر بخوانید</a>
           </div>
-          <div class="col-xl-4 col-md-5 position-relative">
-            <!-- shape -->
-              <img alt="img" src="assets/img/square-blue.png" class="position-absolute d-none d-lg-block -right-45 bounce-top-down2 -z-1">
-              <img alt="shape" src="assets/img/wave-orange.png" class="position-absolute d-none d-lg-block bottom-0 right-215 -z-1 bounce-right">
-            <!--  -->
-            <img alt="img" src="assets/img/doctor.png" class="img-fluid w-100 bounce-top-down">
-          </div>
-          <div class="col-lg-1 d-none d-xl-block"></div>
         </div>
       </div>
     </section>
