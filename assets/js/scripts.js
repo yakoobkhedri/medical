@@ -96,6 +96,15 @@ var days= new Swiper(".days", {
     prevEl: ".swiper-button-prev",
   },
 });
+var days2= new Swiper(".days2", {
+  loop: true,
+  spaceBetween: 35,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+});
 // tabs
 
 let tabs = Array.from(document.getElementsByClassName('tabs'))
@@ -119,3 +128,13 @@ tabs.forEach((tab) => {
 
   // aos
   AOS.init();
+
+  // go to up
+
+window.addEventListener('scroll',()=>{
+  if (window.scrollY>390) {
+    document.querySelector('.goToUp').classList.add('active');
+  } else {
+    document.querySelector('.goToUp').classList.remove('active');
+  }
+})
