@@ -1001,7 +1001,10 @@ header ul ul li:last-child a {
 #hamicon.active>div span:last-child {
     transform: rotate(-44deg) translateX(3px)translateY(-3px);
 }
-
+/* input */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 /* banner */
 .bannerShape {
     background-image: url('../img/bg1.jpg');

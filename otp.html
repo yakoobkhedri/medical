@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' media='screen' href='assets/css/styles.css'>
+  <title>کد تایید</title>
+</head>
+
+<body class="bg-gray">
+
+
+  <section class="container">
+    <form id="loginForm" class="bg-white rounded-40 m-auto max-w-419 shadow-1 px-4 py-5 my-5">
+      <a class="mb-5 d-block"><img alt="logo" src="assets/img/logo.png" class="d-block mx-auto"></a>
+      <div>
+        <div class="otpContainer d-flex align-items-center justify-content-between gap-3 mb-4" dir="ltr">
+          <input disabled type="number" class="h-60 border otpInput text-center flex-grow-1 w-100 outline-none transition rounded-8" min="0" max="9" maxlength="1">
+          <input disabled type="number" class="h-60 border otpInput text-center flex-grow-1 w-100 outline-none transition rounded-8" min="0" max="9" maxlength="1">
+          <input disabled type="number" class="h-60 border otpInput text-center flex-grow-1 w-100 outline-none transition rounded-8" min="0" max="9" maxlength="1">
+          <input disabled type="number" class="h-60 border otpInput text-center flex-grow-1 w-100 outline-none transition rounded-8" min="0" max="9" maxlength="1">
+         </div>
+         <input type="hidden" id="otpHiddenInput" />
+      </div>
+      <input type="submit" class="bg-main w-100 h-60 rounded-8 text-white fw-bold border-0 mb-4" value="ارسال">
+    </form>
+  </section>
+
+ <script src="assets/js/otp.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
