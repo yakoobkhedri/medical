@@ -161,7 +161,9 @@ body {
 .fs-36 {
     font-size: 36px;
 }
-
+.fs-62 {
+    font-size: 62px;
+}
 .fs-120 {
     font-size: 120px;
 }
@@ -170,7 +172,9 @@ body {
 .shadow-main {
     box-shadow: 0px 5px 20px 0px rgba(86, 90, 207, 0.3) !important;
 }
-
+.shadow-main2{
+    box-shadow: 0px 5px 30px 0px rgba(86, 90, 207, 0.3);
+}
 .shadow-second {
     box-shadow: 0px 5px 20px 0px rgba(241, 119, 50, 0.3) !important;
 }
@@ -226,7 +230,9 @@ body {
 .w-40 {
     width: 40px !important;
 }
-
+.w-42 {
+    width: 42px !important;
+}
 .w-45 {
     width: 45px !important;
 }
@@ -242,7 +248,9 @@ body {
 .w-60 {
     width: 60px !important;
 }
-
+.w-66 {
+    width: 66px !important;
+}
 .w-70 {
     width: 70px !important;
 }
@@ -286,7 +294,9 @@ body {
 .w-191 {
     width: 191px !important;
 }
-
+.w-240 {
+    width: 240px !important;
+}
 .w-280 {
     width: 280px !important;
 }
@@ -323,7 +333,9 @@ body {
 .h-40 {
     height: 40px !important;
 }
-
+.h-42 {
+    height: 42px !important;
+}
 .h-44 {
     height: 44px !important;
 }
@@ -471,11 +483,15 @@ body {
 .-bottom-52 {
     bottom: -52px;
 }
-
+.bottom-62 {
+    bottom: 62px;
+}
 .-bottom-63 {
     bottom: -63px;
 }
-
+.bottom-74 {
+    bottom: 74px;
+}
 .-bottom-84 {
     bottom: -84px;
 }
@@ -537,7 +553,9 @@ body {
 .left-79 {
     left: 79px;
 }
-
+.left-200 {
+    left: 200px;
+}
 /* right */
 .right-15 {
     right: 15px;
@@ -562,7 +580,9 @@ body {
 .right-86 {
     right: 86px;
 }
-
+.right-103 {
+    right: 103px;
+}
 .right-170 {
     right: 170px;
 }
@@ -1191,6 +1211,24 @@ input[type="number"] {
 }
 
 /* blog */
+.pageTitle{
+    background-image: url('../img/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pageTitle::after {
+    content: "";
+    height: 22%;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background-image: url('../img/shape4.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 100%;
+}
 #blogSection {
     background-image: url('../img/line-bg2.png');
     background-position: center;
@@ -1443,7 +1481,9 @@ footer ul a:hover {
     .fs-sm-28 {
         font-size: 28px;
     }
-
+    .fs-sm-42 {
+        font-size: 42px;
+    }
     .fs-sm-80 {
         font-size: 80px;
     }
