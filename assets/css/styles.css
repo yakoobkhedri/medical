@@ -61,7 +61,9 @@ body {
 .bg-main-gradient {
     background: linear-gradient(90deg, #565acfab 1%, #565acfac 22%, #f0ad3a6b 74%, #f0ad3a30 100%);
 }
-
+.bg-gray{
+    background-color: #f5f5fc;
+}
 /* text color */
 .text-main {
     color: #565acf;
@@ -182,7 +184,10 @@ body {
     max-width: 100%;
     width: 100%;
 }
-
+.max-w-419 {
+    max-width: 419px;
+    width: 100%;
+}
 .max-w-526 {
     max-width: 526px;
     width: 100%;
@@ -380,7 +385,10 @@ body {
 .border-second {
     border: 1px solid #f17732;
 }
-
+/* shadow */
+.shadow-1{
+    box-shadow: 0px 10px 60px 0px rgba(31, 34, 120, 0.1);
+}
 /* rounded */
 .rounded-8 {
     border-radius: 8px;
@@ -412,7 +420,9 @@ body {
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 0px;
 }
-
+.rounded-40 {
+    border-radius: 40px;
+}
 .rounded-60-tr-0 {
     border-top-left-radius: 60px;
     border-top-right-radius: 0px;
