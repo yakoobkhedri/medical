@@ -614,6 +614,9 @@ body {
     transform: scale(.9);
 }
 /* hover */
+form input:focus, form input:hover {
+    border-color: #565acf!important;
+  }
 .button-hover-1:hover,.swiper-button-next:hover,.swiper-button-prev:hover,.swiper-button-next2:hover,.swiper-button-prev2:hover {
     background-color: #f49762;
 }
