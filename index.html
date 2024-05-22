@@ -15,6 +15,23 @@
 
 <body>
 
+  <!-- login modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered max-w-1132 px-3">
+      <div class="modal-content max-w-419 mx-auto -right-sm-8 rounded-30">
+        <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 m-4 z-10" data-bs-dismiss="modal"
+          aria-label="Close"></button>
+        <h6 class="text-main text-center fs-24 font-bold pt-4">ورود</h6>
+        <div class="modal-body">
+          <form action="otp.html" class="">
+            <a class="mb-5 d-block"><img alt="logo" src="assets/img/logo.jpg" class="d-block mx-auto"></a>
+            <input type="tel" class="transition h-60 w-100 border rounded-8 outline-none px-4 fw-bold mb-3 text-end" placeholder="شماره موبایل">
+            <input type="submit" class="bg-main w-100 h-60 rounded-8 text-white fw-bold border-0 mb-4" value="ارسال کد تایید">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- nobat modal -->
   <div class="modal fade" id="nobatModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -28,7 +45,6 @@
           <div class="row mx-0 mt-3 g-sm-5 g-4">
             <div class="col-lg-3 col-md-4 col-6">
               <div class="position-relative cursor d-flex justify-content-center" data-bs-toggle="modal"
-                data-bs-target="#nobatModal2" data-bs-toggle="modal"
                 data-bs-target="#nobatModal2">
                 <div class="clip-path"></div>
                 <div class="clip-path2">
@@ -446,7 +462,7 @@
       <!-- logo -->
       <div class="d-flex align-items-center gap-4">
         <a class="d-flex align-items-center gap-2">
-          <img alt="logo" src="assets/img/logo.png" class="img-fluid">
+          <img alt="logo" src="assets/img/logo.jpg" class="img-fluid">
         </a>
       </div>
 
@@ -578,9 +594,10 @@
               d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
           </svg>
         </div>
-        <a
+        <a data-bs-toggle="modal"
+        data-bs-target="#loginModal"
           class="d-xl-flex d-none align-items-center main-text transition gap-3 p-1 pe-5 rounded-3 bg-main shadow-main">
-          <span class="text-white transition font-bold">تماس با ما</span>
+          <span class="text-white transition font-bold">ورود</span>
           <div class="d-flex align-items-center justify-content-center rounded-3 bg-white w-40 h-40">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-chevron-left text-main" viewBox="0 0 16 16">
@@ -1187,7 +1204,7 @@
           <img alt="shape" src="assets/img/wave-blue.png" class="position-absolute d-none d-lg-block w-99 -top-63 end-0 -z-1 bounce-right">
           <img alt="shape" src="assets/img/circle-dots.png" class="position-absolute d-none d-xl-block end-0 bottom-0 w-80 -z-1 bounce-top-down">
           <!--  -->
-         <a class="mb-4 d-block"><img alt="logo" src="assets/img/logo.png" class="img-fluid"></a>
+         <a class="mb-4 d-block"><img alt="logo" src="assets/img/logo.jpg" class="img-fluid"></a>
          <p class="mb-4">
           لورم ایپسوم متنلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
         </p>
@@ -1206,60 +1223,25 @@
         </div>
         </a>
         </div>
-        <div class="col-xl-3 col-6">
-          <h3 class="fs-24 fs-sm-20 font-bold text-main2 mb-5 position-relative footer-title">دسترسی سریع</h3>
-          <ul class="list-unstyled pe-0 mb-0 d-flex flex-column gap-2 fs-sm-14">
-            <li>
-              <a class="text-dark fw-bold">درباره ما</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">خدمات</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">نوبت دهی</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">سوالات متداول</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">بلاگ</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">تیم ما</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-xl-3 col-6">
-          <h3 class="fs-24 fs-sm-20 font-bold text-main2 mb-5 position-relative footer-title">خدمات ما</h3>
-          <ul class="list-unstyled pe-0 mb-0 d-flex flex-column gap-2 fs-sm-14">
-            <li>
-              <a class="text-dark fw-bold">مراقبت دندان</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">کلینیک قلب</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">ماساژ درمانی</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">کاردیولوژی</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">تشخیص دقیق</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">خدمات آمبولانس</a>
-            </li>
-          </ul>
+        <div class="col-xl-6">
+          <h3 class="fs-24 fs-sm-20 font-bold text-main2 mb-5 position-relative footer-title">نقشه</h3>
+          <div class="border-main-2 rounded-8 overflow-hidden">
+            <iframe class="w-100"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.4568466881415!2d51.386775747676346!3d35.71498150208261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0126f8ba098b%3A0x9648cbba5b7e5ae4!2sTehran%20Province%2C%20Tehran%2C%20District%206%2C%20Dr%20Fatemi%20St%2C%20Iran!5e0!3m2!1sen!2s!4v1693152625233!5m2!1sen!2s"
+          height="228" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
         <div class="col-xl-3 col-lg-6 position-relative">
           <!-- shape -->
           <img alt="shape" src="assets/img/plus-blue.png" class="position-absolute d-none d-lg-block start-0 rotate -z-1">
           <img alt="shape" src="assets/img/wave-blue.png" class="position-absolute d-none d-lg-block w-99 -bottom-45 start-0 -z-1 bounce-right">
           <!--  -->
-          <h3 class="fs-24 font-bold text-main2 mb-5 position-relative footer-title">اشتراک</h3>
-          <input class="h-52 rounded-10 bg-white w-100 form-control fw-bold mail-input" placeholder=" آدرس ایمیل">
-          <input type="submit" value="اشتراک الان" class="button-hover-1 transition bg-second h-48 rounded-10 text-white fw-bold border-0 w-100 mt-4 shadow-second">
+          <h3 class="fs-24 font-bold text-main2 mb-5 position-relative footer-title">ساعات کاری</h3>
+          <div>
+            <p class="mb-1">شنبه تا پنجشنبه</p>
+            <p>از 9 صبح تا 6 عصر</p>
+          </div>
           <div class="d-flex align-items-center justify-content-start gap-3 mt-4">
            <a>
             <img alt="icon" src="assets/img/facebook.png" class="d-block img-fluid w-26 h-26">
@@ -1297,7 +1279,7 @@
       <ul
         class="position-absolute list-unstyled -bottom-21 px-4 d-flex align-items-center justify-content-between w-100 z-10">
         <li>
-          <a>
+          <a href="login.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
               class="bi bi-box-arrow-in-right mx-auto mb-1 text-main" viewBox="0 0 16 16">
               <path fill-rule="evenodd"

@@ -15,6 +15,23 @@
 
 <body>
 
+    <!-- login modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered max-w-1132 px-3">
+        <div class="modal-content max-w-419 mx-auto -right-sm-8 rounded-30">
+          <button type="button" class="btn-close btn-sm position-absolute top-0 start-0 m-4 z-10" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+          <h6 class="text-main text-center fs-24 font-bold pt-4">ورود</h6>
+          <div class="modal-body">
+            <form action="otp.html" class="">
+              <a class="mb-5 d-block"><img alt="logo" src="assets/img/logo.jpg" class="d-block mx-auto"></a>
+              <input type="tel" class="transition h-60 w-100 border rounded-8 outline-none px-4 fw-bold mb-3 text-end" placeholder="شماره موبایل">
+              <input type="submit" class="bg-main w-100 h-60 rounded-8 text-white fw-bold border-0 mb-4" value="ارسال کد تایید">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- nobat modal -->
   <div class="modal fade" id="nobatModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -28,7 +45,7 @@
           <div class="row mx-0 mt-3 g-sm-5 g-4">
             <div class="col-lg-3 col-md-4 col-6">
               <div class="position-relative cursor d-flex justify-content-center" data-bs-toggle="modal"
-                data-bs-target="#nobatModal2" data-bs-toggle="modal" data-bs-target="#nobatModal2">
+                data-bs-target="#nobatModal2">
                 <div class="clip-path"></div>
                 <div class="clip-path2">
                   <div class="clip-path3">
@@ -463,7 +480,7 @@
       <!-- logo -->
       <div class="d-flex align-items-center gap-4">
         <a class="d-flex align-items-center gap-2">
-          <img alt="logo" src="assets/img/logo.png" class="img-fluid">
+          <img alt="logo" src="assets/img/logo.jpg" class="img-fluid">
         </a>
       </div>
 
@@ -595,9 +612,10 @@
               d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
           </svg>
         </div>
-        <a
+        <a data-bs-toggle="modal"
+        data-bs-target="#loginModal"
           class="d-xl-flex d-none align-items-center main-text transition gap-3 p-1 pe-5 rounded-3 bg-main shadow-main">
-          <span class="text-white transition font-bold">تماس با ما</span>
+          <span class="text-white transition font-bold">ورود</span>
           <div class="d-flex align-items-center justify-content-center rounded-3 bg-white w-40 h-40">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-chevron-left text-main" viewBox="0 0 16 16">
@@ -1049,109 +1067,62 @@
       <div class="row mx-0 g-5 g-lg-4 pt-150 pt-lg-70 position-relative z-1">
         <div class="col-xl-3 col-lg-6 position-relative">
           <!-- shape -->
-          <img alt="shape" src="assets/img/wave-blue.png"
-            class="position-absolute d-none d-lg-block w-99 -top-63 end-0 -z-1 bounce-right">
-          <img alt="shape" src="assets/img/circle-dots.png"
-            class="position-absolute d-none d-xl-block end-0 bottom-0 w-80 -z-1 bounce-top-down">
+          <img alt="shape" src="assets/img/wave-blue.png" class="position-absolute d-none d-lg-block w-99 -top-63 end-0 -z-1 bounce-right">
+          <img alt="shape" src="assets/img/circle-dots.png" class="position-absolute d-none d-xl-block end-0 bottom-0 w-80 -z-1 bounce-top-down">
           <!--  -->
-          <a class="mb-4 d-block"><img alt="logo" src="assets/img/logo.png" class="img-fluid"></a>
-          <p class="mb-4">
-            لورم ایپسوم متنلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
-          </p>
-          <a class="d-flex align-items-center gap-3">
-            <div class="bg-second rounded-30-bl-0 w-60 h-60 d-flex align-items-center justify-content-center">
-              <svg class="mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
-                fill="none">
-                <g>
-                  <path
-                    d="M15.75 2.33333C15.75 2.33333 18.473 2.58066 21.9368 6.04566C25.4018 9.51066 25.6492 12.2325 25.6492 12.2325M16.5748 6.45866C16.5748 6.45866 17.7298 6.78766 19.4623 8.52016C21.1948 10.2527 21.525 11.4077 21.525 11.4077"
-                    stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
-                  <path
-                    d="M18.1487 16.9715L18.7833 17.5747L18.1487 16.9727V16.9715ZM22.169 23.6297L21.5332 23.0265L22.1678 23.6297H22.169ZM20.622 24.458L20.7083 25.3272L20.622 24.4568V24.458ZM18.2525 18.1335L18.7833 17.5735L17.514 16.3683L16.9832 16.9295L18.2525 18.1335ZM20.5322 17.3378L22.7605 18.6223L23.6332 17.1045L21.4048 15.8212L20.5322 17.3378ZM23.191 21.2812L21.5343 23.0253L22.8025 24.2317L24.4592 22.4875L23.191 21.2812ZM20.5368 23.5853C18.8627 23.7498 14.4935 23.6098 9.75217 18.6188L8.484 19.8228C13.6512 25.263 18.5803 25.5383 20.7083 25.3272L20.5368 23.5853ZM9.75217 18.6188C5.23017 13.8577 4.47184 9.84083 4.37734 8.07916L2.62967 8.17366C2.74633 10.332 3.661 14.7455 8.484 19.8228L9.75217 18.6188ZM11.3575 10.8745L11.6912 10.5222L10.423 9.31699L10.0882 9.66932L11.3575 10.8745ZM11.9548 6.13549L10.4837 4.05649L9.0545 5.06682L10.5245 7.14699L11.9548 6.13666V6.13549ZM5.50317 3.60616L3.67383 5.53582L4.94317 6.74099L6.77484 4.81249L5.5055 3.60732L5.50317 3.60616ZM10.7228 10.2713C10.5129 10.069 10.3009 9.86868 10.087 9.67049L10.0847 9.67282L10.0812 9.67632C10.0607 9.69796 10.0412 9.72054 10.0228 9.74399C9.90847 9.89537 9.81798 10.0634 9.7545 10.2422C9.64017 10.563 9.5795 10.9877 9.6565 11.5173C9.80817 12.558 10.4907 13.9568 12.2722 15.834L13.5415 14.6277C11.8755 12.8742 11.4648 11.795 11.3878 11.263C11.3505 11.0063 11.3878 10.8722 11.403 10.829L11.4123 10.8068C11.4028 10.8222 11.3919 10.8367 11.3797 10.85C11.3728 10.8579 11.3658 10.8657 11.3587 10.8733C11.3587 10.8733 11.3563 10.8733 10.7228 10.2713ZM12.2722 15.834C14.049 17.7053 15.3907 18.4392 16.4138 18.606C16.94 18.6912 17.3658 18.6223 17.6878 18.4952C17.8662 18.4251 18.0321 18.3266 18.179 18.2035C18.1934 18.1906 18.2074 18.1774 18.221 18.1638L18.2373 18.1475C18.2401 18.1452 18.2428 18.1429 18.2455 18.1405L18.249 18.137L18.2502 18.1347C18.2502 18.1347 18.2525 18.1335 17.6178 17.5303C16.9832 16.9283 16.9843 16.9272 16.9843 16.926L16.9867 16.9248L16.989 16.9213C16.991 16.9194 16.9929 16.9175 16.9948 16.9155L17.0065 16.9038C17.0202 16.8906 17.0346 16.8781 17.0497 16.8665C17.0613 16.8595 17.0602 16.8618 17.045 16.8677C17.0217 16.877 16.9167 16.9143 16.695 16.8782C16.226 16.8012 15.2133 16.3882 13.5415 14.6277L12.2722 15.834ZM10.4837 4.05649C9.30067 2.38349 6.93584 2.09999 5.5055 3.60732L6.77134 4.81249C7.3815 4.17082 8.45717 4.22099 9.0545 5.06682L10.4837 4.05649ZM4.37734 8.07916C4.35167 7.61249 4.55584 7.14699 4.94317 6.74099L3.67383 5.53582C3.0485 6.19382 2.5725 7.10732 2.62967 8.17366L4.37734 8.07916ZM21.5332 23.0265C21.2077 23.3695 20.8682 23.5527 20.5368 23.5853L20.7083 25.3272C21.5798 25.242 22.2857 24.7765 22.8025 24.2317L21.5332 23.0277V23.0265ZM11.6912 10.5233C12.8205 9.33449 12.8998 7.47482 11.9548 6.13666L10.5257 7.14699C11.018 7.84349 10.9422 8.77099 10.423 9.31699L11.6912 10.5233ZM22.7605 18.6223C23.7183 19.1742 23.9062 20.5298 23.191 21.2823L24.4592 22.4875C25.9817 20.8845 25.5383 18.2023 23.6343 17.1057L22.7605 18.6223ZM18.7833 17.5747C19.2325 17.101 19.9337 16.9948 20.5322 17.339L21.4048 15.8223C20.1227 15.085 18.5348 15.2973 17.514 16.3707L18.7833 17.5747Z"
-                    fill="white"></path>
-                </g>
-              </svg>
-            </div>
-            <div>
-              <p class="text-second font-bold fs-14 mb-0">تماس با ما</p>
-              <p class="text-main2 fs-20 font-bold mb-0">+01 123 456 7890</p>
-            </div>
-          </a>
+         <a class="mb-4 d-block"><img alt="logo" src="assets/img/logo.jpg" class="img-fluid"></a>
+         <p class="mb-4">
+          لورم ایپسوم متنلورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده
+        </p>
+        <a class="d-flex align-items-center gap-3">
+         <div class="bg-second rounded-30-bl-0 w-60 h-60 d-flex align-items-center justify-content-center">
+          <svg class="mx-auto mb-1" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <g>
+              <path d="M15.75 2.33333C15.75 2.33333 18.473 2.58066 21.9368 6.04566C25.4018 9.51066 25.6492 12.2325 25.6492 12.2325M16.5748 6.45866C16.5748 6.45866 17.7298 6.78766 19.4623 8.52016C21.1948 10.2527 21.525 11.4077 21.525 11.4077" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+              <path d="M18.1487 16.9715L18.7833 17.5747L18.1487 16.9727V16.9715ZM22.169 23.6297L21.5332 23.0265L22.1678 23.6297H22.169ZM20.622 24.458L20.7083 25.3272L20.622 24.4568V24.458ZM18.2525 18.1335L18.7833 17.5735L17.514 16.3683L16.9832 16.9295L18.2525 18.1335ZM20.5322 17.3378L22.7605 18.6223L23.6332 17.1045L21.4048 15.8212L20.5322 17.3378ZM23.191 21.2812L21.5343 23.0253L22.8025 24.2317L24.4592 22.4875L23.191 21.2812ZM20.5368 23.5853C18.8627 23.7498 14.4935 23.6098 9.75217 18.6188L8.484 19.8228C13.6512 25.263 18.5803 25.5383 20.7083 25.3272L20.5368 23.5853ZM9.75217 18.6188C5.23017 13.8577 4.47184 9.84083 4.37734 8.07916L2.62967 8.17366C2.74633 10.332 3.661 14.7455 8.484 19.8228L9.75217 18.6188ZM11.3575 10.8745L11.6912 10.5222L10.423 9.31699L10.0882 9.66932L11.3575 10.8745ZM11.9548 6.13549L10.4837 4.05649L9.0545 5.06682L10.5245 7.14699L11.9548 6.13666V6.13549ZM5.50317 3.60616L3.67383 5.53582L4.94317 6.74099L6.77484 4.81249L5.5055 3.60732L5.50317 3.60616ZM10.7228 10.2713C10.5129 10.069 10.3009 9.86868 10.087 9.67049L10.0847 9.67282L10.0812 9.67632C10.0607 9.69796 10.0412 9.72054 10.0228 9.74399C9.90847 9.89537 9.81798 10.0634 9.7545 10.2422C9.64017 10.563 9.5795 10.9877 9.6565 11.5173C9.80817 12.558 10.4907 13.9568 12.2722 15.834L13.5415 14.6277C11.8755 12.8742 11.4648 11.795 11.3878 11.263C11.3505 11.0063 11.3878 10.8722 11.403 10.829L11.4123 10.8068C11.4028 10.8222 11.3919 10.8367 11.3797 10.85C11.3728 10.8579 11.3658 10.8657 11.3587 10.8733C11.3587 10.8733 11.3563 10.8733 10.7228 10.2713ZM12.2722 15.834C14.049 17.7053 15.3907 18.4392 16.4138 18.606C16.94 18.6912 17.3658 18.6223 17.6878 18.4952C17.8662 18.4251 18.0321 18.3266 18.179 18.2035C18.1934 18.1906 18.2074 18.1774 18.221 18.1638L18.2373 18.1475C18.2401 18.1452 18.2428 18.1429 18.2455 18.1405L18.249 18.137L18.2502 18.1347C18.2502 18.1347 18.2525 18.1335 17.6178 17.5303C16.9832 16.9283 16.9843 16.9272 16.9843 16.926L16.9867 16.9248L16.989 16.9213C16.991 16.9194 16.9929 16.9175 16.9948 16.9155L17.0065 16.9038C17.0202 16.8906 17.0346 16.8781 17.0497 16.8665C17.0613 16.8595 17.0602 16.8618 17.045 16.8677C17.0217 16.877 16.9167 16.9143 16.695 16.8782C16.226 16.8012 15.2133 16.3882 13.5415 14.6277L12.2722 15.834ZM10.4837 4.05649C9.30067 2.38349 6.93584 2.09999 5.5055 3.60732L6.77134 4.81249C7.3815 4.17082 8.45717 4.22099 9.0545 5.06682L10.4837 4.05649ZM4.37734 8.07916C4.35167 7.61249 4.55584 7.14699 4.94317 6.74099L3.67383 5.53582C3.0485 6.19382 2.5725 7.10732 2.62967 8.17366L4.37734 8.07916ZM21.5332 23.0265C21.2077 23.3695 20.8682 23.5527 20.5368 23.5853L20.7083 25.3272C21.5798 25.242 22.2857 24.7765 22.8025 24.2317L21.5332 23.0277V23.0265ZM11.6912 10.5233C12.8205 9.33449 12.8998 7.47482 11.9548 6.13666L10.5257 7.14699C11.018 7.84349 10.9422 8.77099 10.423 9.31699L11.6912 10.5233ZM22.7605 18.6223C23.7183 19.1742 23.9062 20.5298 23.191 21.2823L24.4592 22.4875C25.9817 20.8845 25.5383 18.2023 23.6343 17.1057L22.7605 18.6223ZM18.7833 17.5747C19.2325 17.101 19.9337 16.9948 20.5322 17.339L21.4048 15.8223C20.1227 15.085 18.5348 15.2973 17.514 16.3707L18.7833 17.5747Z" fill="white"></path>
+            </g>
+          </svg>
         </div>
-        <div class="col-xl-3 col-6">
-          <h3 class="fs-24 fs-sm-20 font-bold text-main2 mb-5 position-relative footer-title">دسترسی سریع</h3>
-          <ul class="list-unstyled pe-0 mb-0 d-flex flex-column gap-2 fs-sm-14">
-            <li>
-              <a class="text-dark fw-bold">درباره ما</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">خدمات</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">نوبت دهی</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">سوالات متداول</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">بلاگ</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">تیم ما</a>
-            </li>
-          </ul>
+        <div>
+          <p class="text-second font-bold fs-14 mb-0">تماس با ما</p>
+          <p class="text-main2 fs-20 font-bold mb-0">+01 123 456 7890</p>
         </div>
-        <div class="col-xl-3 col-6">
-          <h3 class="fs-24 fs-sm-20 font-bold text-main2 mb-5 position-relative footer-title">خدمات ما</h3>
-          <ul class="list-unstyled pe-0 mb-0 d-flex flex-column gap-2 fs-sm-14">
-            <li>
-              <a class="text-dark fw-bold">مراقبت دندان</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">کلینیک قلب</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">ماساژ درمانی</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">کاردیولوژی</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">تشخیص دقیق</a>
-            </li>
-            <li>
-              <a class="text-dark fw-bold">خدمات آمبولانس</a>
-            </li>
-          </ul>
+        </a>
+        </div>
+        <div class="col-xl-6">
+          <h3 class="fs-24 fs-sm-20 font-bold text-main2 mb-5 position-relative footer-title">نقشه</h3>
+          <div class="border-main-2 rounded-8 overflow-hidden">
+            <iframe class="w-100"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.4568466881415!2d51.386775747676346!3d35.71498150208261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0126f8ba098b%3A0x9648cbba5b7e5ae4!2sTehran%20Province%2C%20Tehran%2C%20District%206%2C%20Dr%20Fatemi%20St%2C%20Iran!5e0!3m2!1sen!2s!4v1693152625233!5m2!1sen!2s"
+          height="228" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
         <div class="col-xl-3 col-lg-6 position-relative">
           <!-- shape -->
-          <img alt="shape" src="assets/img/plus-blue.png"
-            class="position-absolute d-none d-lg-block start-0 rotate -z-1">
-          <img alt="shape" src="assets/img/wave-blue.png"
-            class="position-absolute d-none d-lg-block w-99 -bottom-45 start-0 -z-1 bounce-right">
+          <img alt="shape" src="assets/img/plus-blue.png" class="position-absolute d-none d-lg-block start-0 rotate -z-1">
+          <img alt="shape" src="assets/img/wave-blue.png" class="position-absolute d-none d-lg-block w-99 -bottom-45 start-0 -z-1 bounce-right">
           <!--  -->
-          <h3 class="fs-24 font-bold text-main2 mb-5 position-relative footer-title">اشتراک</h3>
-          <input class="h-52 rounded-10 bg-white w-100 form-control fw-bold mail-input" placeholder=" آدرس ایمیل">
-          <input type="submit" value="اشتراک الان"
-            class="button-hover-1 transition bg-second h-48 rounded-10 text-white fw-bold border-0 w-100 mt-4 shadow-second">
+          <h3 class="fs-24 font-bold text-main2 mb-5 position-relative footer-title">ساعات کاری</h3>
+          <div>
+            <p class="mb-1">شنبه تا پنجشنبه</p>
+            <p>از 9 صبح تا 6 عصر</p>
+          </div>
           <div class="d-flex align-items-center justify-content-start gap-3 mt-4">
-            <a>
-              <img alt="icon" src="assets/img/facebook.png" class="d-block img-fluid w-26 h-26">
-            </a>
-            <a>
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
-                class="bi bi-twitter text-info" viewBox="0 0 16 16">
-                <path
-                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
-              </svg>
-            </a>
-            <a>
-              <img alt="icon" src="assets/img/instagram.png" class="d-block img-fluid w-26 h-26">
-            </a>
-            <a>
-              <img alt="icon" src="assets/img/linkedin.png" class="d-block img-fluid w-26 h-26">
-            </a>
+           <a>
+            <img alt="icon" src="assets/img/facebook.png" class="d-block img-fluid w-26 h-26">
+           </a>
+           <a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-twitter text-info" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+            </svg>
+           </a>
+           <a>
+            <img alt="icon" src="assets/img/instagram.png" class="d-block img-fluid w-26 h-26">
+           </a>
+           <a>
+            <img alt="icon" src="assets/img/linkedin.png" class="d-block img-fluid w-26 h-26">
+           </a>
           </div>
         </div>
       </div>
@@ -1174,7 +1145,7 @@
       <ul
         class="position-absolute list-unstyled -bottom-21 px-4 d-flex align-items-center justify-content-between w-100 z-10">
         <li>
-          <a>
+          <a href="login.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
               class="bi bi-box-arrow-in-right mx-auto mb-1 text-main" viewBox="0 0 16 16">
               <path fill-rule="evenodd"
