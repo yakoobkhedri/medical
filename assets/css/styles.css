@@ -251,6 +251,9 @@ body {
 .w-66 {
     width: 66px !important;
 }
+.w-68 {
+    width: 68px !important;
+}
 .w-70 {
     width: 70px !important;
 }
@@ -397,7 +400,9 @@ body {
 .border-main-3 {
     border: 2px solid #dddef6;
 }
-
+.border-b-main-3{
+    border-bottom: 3px solid #565acf!important;
+}
 .border-second {
     border: 1px solid #f17732;
 }
@@ -426,7 +431,9 @@ body {
 .rounded-13 {
     border-radius: 13px;
 }
-
+.rounded-14 {
+    border-radius: 14px;
+}
 .rounded-15 {
     border-radius: 15px;
 }
@@ -650,7 +657,7 @@ body {
     transform: scale(.9);
 }
 /* hover */
-form input:focus, form input:hover {
+form input:focus, form input:hover,textarea:hover,textarea:focus {
     border-color: #565acf!important;
   }
 .button-hover-1:hover,.swiper-button-next:hover,.swiper-button-prev:hover,.swiper-button-next2:hover,.swiper-button-prev2:hover {
