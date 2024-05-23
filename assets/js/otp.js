@@ -82,4 +82,5 @@ startInput();
 window.onload= function () {
   let firstInput = document.getElementById('first');
   finalInput.focus();
+  finalInput.click()
 }
