@@ -82,5 +82,4 @@ startInput();
 window.onload= function () {
   let firstInput = document.getElementById('first');
   firstInput.focus();
-  navigator.virtualkeyboard.show()
 }
