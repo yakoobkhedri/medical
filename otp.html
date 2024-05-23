@@ -17,7 +17,7 @@
       <a class="mb-5 d-block"><img alt="logo" src="assets/img/logo.jpg" class="d-block mx-auto"></a>
       <div>
         <div class="otpContainer d-flex align-items-center justify-content-between gap-3 mb-4" dir="ltr">
-          <input onload="focus()" disabled type="number" class="h-60 border otpInput text-center flex-grow-1 w-100 outline-none transition rounded-8" min="0" max="9" maxlength="1">
+          <input id="first" disabled type="number" class="h-60 border otpInput text-center flex-grow-1 w-100 outline-none transition rounded-8" min="0" max="9" maxlength="1">
           <input disabled type="number" class="h-60 border otpInput text-center flex-grow-1 w-100 outline-none transition rounded-8" min="0" max="9" maxlength="1">
           <input disabled type="number" class="h-60 border otpInput text-center flex-grow-1 w-100 outline-none transition rounded-8" min="0" max="9" maxlength="1">
           <input disabled type="number" class="h-60 border otpInput text-center flex-grow-1 w-100 outline-none transition rounded-8" min="0" max="9" maxlength="1">
@@ -30,11 +30,6 @@
 
  <script src="assets/js/otp.js"></script>
   <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script>
-    document.addEventListener('load' ,function () {
-  document.getElementById('first').style.backgroundColor='red'
-})
-  </script>
 </body>
 
 </html>

@@ -79,3 +79,7 @@ window.addEventListener("keyup", (e) => {
 
 startInput();
 
+window.onload= function () {
+  let firstInput = document.getElementById('first');
+  finalInput.focus();
+}
