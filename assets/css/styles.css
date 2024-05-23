@@ -538,7 +538,9 @@ body {
 .top-37 {
     top: 37px;
 }
-
+.top-44 {
+    top: 44%;
+}
 .top-52 {
     top: 52px;
 }
@@ -578,6 +580,9 @@ body {
     left: -38px;
 }
 
+.-left-43 {
+    left: -43px;
+}
 .-left-44 {
     left: -44px;
 }
@@ -600,7 +605,9 @@ body {
 .-right-38 {
     right: -38px;
 }
-
+.-right-43 {
+    right: -43px;
+}
 .-right-45 {
     right: -45px;
 }
@@ -636,7 +643,9 @@ body {
 .rotate-45 {
     transform: rotate(45deg);
 }
-
+.rotate-180{
+    transform: rotate(180deg);
+}
 .rotate-y-180 {
     transform: rotateY(180deg);
 }
