@@ -368,7 +368,9 @@ body {
 .h-70 {
     height: 70px !important;
 }
-
+.h-80 {
+    height: 80px !important;
+}
 .h-86 {
     height: 86px !important;
 }
@@ -427,7 +429,9 @@ body {
 .rounded-10 {
     border-radius: 10px;
 }
-
+.rounded-12 {
+    border-radius: 12px;
+}
 .rounded-13 {
     border-radius: 13px;
 }
@@ -524,6 +528,9 @@ body {
 }
 
 /* top */
+.-top-3 {
+    top: -3px;
+}
 .top-25 {
     top: 25px;
 }
@@ -547,7 +554,9 @@ body {
 .-top-108 {
     top: -108px;
 }
-
+.top-162 {
+    top: 162px;
+}
 .top-305 {
     top: 305px;
 }
