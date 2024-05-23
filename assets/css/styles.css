@@ -685,7 +685,6 @@ form input:focus, form input:hover,textarea:hover,textarea:focus {
 .button-hover-2:hover {
     background-color: #494db0;
 }
-
 .time-hover:hover,
 .time-hover.active {
     background-color: #F0AC3A;
@@ -1062,9 +1061,14 @@ header ul ul li:last-child a {
 #hamicon.active>div span:last-child {
     transform: rotate(-44deg) translateX(3px)translateY(-3px);
 }
-/* input */
+/* input type number */
 input[type="number"] {
     -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 /* banner */
 .bannerShape {

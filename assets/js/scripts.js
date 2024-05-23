@@ -45,7 +45,7 @@ var bannerSwiper= new Swiper(".bannerSwiper", {
   spaceBetween: 35,
   slidesPerView: 1,
   autoplay: {
-    delay: 2500,
+    delay: 5500,
     disableOnInteraction: false,
   },
 });
