@@ -70,6 +70,29 @@ var teamSwiper= new Swiper(".teamSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+var insurranceSwiper= new Swiper(".insurranceSwiper", {
+  loop: true,
+  spaceBetween: 35,
+  slidesPerView: 2,
+  breakpoints: {
+    576: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    992:{
+      slidesPerView:5
+    },
+    1200: {
+      slidesPerView: 6,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  }
+});
 var services= new Swiper(".services", {
   loop: true,
   spaceBetween: 35,
