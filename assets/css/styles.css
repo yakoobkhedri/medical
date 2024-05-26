@@ -30,7 +30,9 @@ body {
 .bg-second {
     background-color: #f17732;
 }
-
+.bg-white-transparent{
+    background-color: rgba(255, 255, 255, 0.58);
+}
 .bg-blur {
     background: #ffffffbd;
     backdrop-filter: blur(11px);
@@ -402,6 +404,9 @@ body {
 .border-main-3 {
     border: 2px solid #dddef6;
 }
+.border-b-main-1{
+    border-bottom: 1px solid #565acf!important;
+}
 .border-b-main-3{
     border-bottom: 3px solid #565acf!important;
 }
@@ -675,6 +680,9 @@ body {
     transform: scale(.9);
 }
 /* hover */
+.right-hover:hover{
+    transform: translateX(20px);
+}
 form input:focus, form input:hover,textarea:hover,textarea:focus {
     border-color: #565acf!important;
   }
@@ -1155,7 +1163,14 @@ input[type="number"]::-webkit-outer-spin-button {
 .aboutCard3 {
     border: 1px solid #e2c4ff;
 }
-
+/* features */
+#features{
+    background-image: url('../img/bigstock-Medical-physician-doctor-hands-84721406.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 /* team */
 .team:hover,
 .card-hover:hover {
