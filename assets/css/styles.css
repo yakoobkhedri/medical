@@ -1164,12 +1164,21 @@ input[type="number"]::-webkit-outer-spin-button {
     border: 1px solid #e2c4ff;
 }
 /* features */
-#features{
-    background-image: url('../img/bigstock-Medical-physician-doctor-hands-84721406.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+#features {
+    padding-left: calc((100% - 1200px) / 2);
+    padding-right: calc((100% - 1200px) / 2);
+}
+
+#features::after {
+    content: "";
+    background-color: #565acf;
+    height: 100%;
+    width: 45%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 40px 0px 0px 40px;
 }
 /* team */
 .team:hover,
@@ -1509,7 +1518,7 @@ footer ul a:hover {
         font-size: 24px;
     }
 
-    #services::after {
+    #services::after, #features::after {
         width: 100%;
         border-radius: 0px;
     }

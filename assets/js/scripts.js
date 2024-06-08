@@ -93,6 +93,26 @@ var insurranceSwiper= new Swiper(".insurranceSwiper", {
     disableOnInteraction: false,
   }
 });
+var features= new Swiper(".features", {
+  loop: true,
+  spaceBetween: 35,
+  slidesPerView: 1,
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    }
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
 var services= new Swiper(".services", {
   loop: true,
   spaceBetween: 35,
